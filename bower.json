@@ -1,0 +1,22 @@
+{
+  "name": "site-3f",
+  "homepage": "https://github.com/juulhao/site3f",
+  "description": "Website Agência 3f",
+  "main": "js/app.js",
+  "keywords": [
+    "WebSite",
+    "Agency",
+    "agencia",
+    "tecnologia",
+    "digital"
+  ],
+  "authors": [
+    "Julio Rodrigues"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bower": "*",
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.6"
+  }
+}
