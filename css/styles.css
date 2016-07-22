@@ -1,4 +1,27 @@
 *{margin: 0}
-body{
-	background: url('../imgs/bg-site.jpg');
+
+.font-red{color: #fd544f}
+.titulo-sublinhado::after{content:"";display: inline-block;height: 21px;
+width: 100%;background: url('../imgs/sublinhado.png')no-repeat center;}
+img{max-width: 100%;}
+section{float: left;width: 100%; height: 100vh;text-align: center;    background: url('../imgs/bg-site.jpg')no-repeat top center;
+    background-size: 100%;}
+nav.col-md-12 {position: fixed; z-index: 1;}
+nav{text-align: center;padding-top: 0.5em;}
+nav ul li{display: inline-block;}
+nav ul li a{padding: 1em;font-size: 18pt;color: #fff;}
+nav ul li a:hover{color: #ccc;}
+nav ul li a:active{color: #fd544f;}
+section div{text-align: center;padding-top: 2em}
+h2{color: #fff;font-size: 3em;text-transform: uppercase;}
+h3{color: #fff;}
+#sobre p{font-size: 1.4em;color: #fff}
+.avatar{float: left;margin-left: 11em;max-width: 17%;}
+input[type="text"] {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #fff;
+    outline: none;
 }
+
