@@ -1,16 +1,5 @@
 *{margin: 0}
 @font-face {
-  font-family: 'Bitter-Italic';
-  src: url('../css/fonts/Bitter-Italic.eot');
-  src: url('../css/fonts/Bitter-Italic.woff2') format('woff2'),
-       url('../css/fonts/Bitter-Italic.woff') format('woff'),
-       url('../css/fonts/Bitter-Italic.ttf') format('truetype'),
-       url('../css/fonts/Bitter-Italic.svg#Bitter-Italic') format('svg'),
-       url('../css/fonts/Bitter-Italic.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
   font-family: 'billy';
   src: url('../css/fonts/billy.eot');
   src: url('../css/fonts/billy.woff2') format('woff2'),
@@ -22,6 +11,28 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'Bitter-Bold';
+  src: url('../css/fonts/Bitter-Bold.eot');
+  src: url('../css/fonts/Bitter-Bold.woff2') format('woff2'),
+       url('../css/fonts/Bitter-Bold.woff') format('woff'),
+       url('../css/fonts/Bitter-Bold.ttf') format('truetype'),
+       url('../css/fonts/Bitter-Bold.svg#Bitter-Bold') format('svg'),
+       url('../css/fonts/Bitter-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bitter-BoldItalic';
+  src: url('../css/fonts/Bitter-BoldItalic.eot');
+  src: url('../css/fonts/Bitter-BoldItalic.woff2') format('woff2'),
+       url('../css/fonts/Bitter-BoldItalic.woff') format('woff'),
+       url('../css/fonts/Bitter-BoldItalic.ttf') format('truetype'),
+       url('../css/fonts/Bitter-BoldItalic.svg#Bitter-BoldItalic') format('svg'),
+       url('../css/fonts/Bitter-BoldItalic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Bitter-Italic';
   src: url('../css/fonts/Bitter-Italic.eot');
   src: url('../css/fonts/Bitter-Italic.woff2') format('woff2'),
@@ -33,13 +44,13 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'BoldItalic';
-  src: url('../css/fonts/Bitter-BoldItalic.eot');
-  src: url('../css/fonts/Bitter-BoldItalic.woff2') format('woff2'),
-       url('../css/fonts/Bitter-BoldItalic.woff') format('woff'),
-       url('../css/fonts/Bitter-BoldItalic.ttf') format('truetype'),
-       url('../css/fonts/Bitter-BoldItalic.svg#Bitter-BoldItalic') format('svg'),
-       url('../css/fonts/Bitter-BoldItalic.eot?#iefix') format('embedded-opentype');
+  font-family: 'Bitter-Regular';
+  src: url('../css/fonts/Bitter-Regular.eot');
+  src: url('../css/fonts/Bitter-Regular.woff2') format('woff2'),
+       url('../css/fonts/Bitter-Regular.woff') format('woff'),
+       url('../css/fonts/Bitter-Regular.ttf') format('truetype'),
+       url('../css/fonts/Bitter-Regular.svg#Bitter-Regular') format('svg'),
+       url('../css/fonts/Bitter-Regular.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -65,22 +76,56 @@ img{max-width: 100%;}
   -webkit-justify-content: center;
   justify-content: center;
 }
-section{float: left;width: 100%; height: 100vh;text-align: center;    background: url('../imgs/bg-site.jpg')no-repeat top center;
-    background-size: cover;}
-nav.col-md-12 {position: fixed; z-index: 1;}
-nav{text-align: center;padding-top: 0.5em;}
+section{
+  float:left;
+  width: 100%; 
+  height: 100vh;
+  text-align: center;
+  background: url('../imgs/bg-site.jpg')no-repeat top center;
+  background-size: cover;
+}
+nav{
+  z-index: 1;
+  border: 1px solid;
+  border-top: 0;
+  border-bottom: 2px solid #fd544f;
+  text-align: center;
+  padding-top: 0.3em;
+  background: url('../imgs/bg-site.jpg')no-repeat top center;
+}
 nav ul li{display: inline-block;padding: 0 5em;}
 nav ul li a{font-size: 20pt;color: #fff;font-family: billy;text-transform: uppercase;padding-bottom: 10px;}
-nav ul li a:hover{    color: #fd544f;
+nav ul li a:hover,nav ul li a:active,nav ul li a:focus{
+    color: #fd544f;
     background: url('../imgs/borda-menu.png')no-repeat;
     text-decoration: none;
     background-size: 110%;
-    background-position: 0px 15px;}
-nav ul li a:active{color: #fd544f;}
-section div{text-align: center;padding-top: 2em}
+    background-position: 0px 15px;
+}
+#responsive-menu img{    
+   position: fixed;
+   top: 7px;
+}
+#modal-menu{
+    -webkit-user-select: none;
+    z-index: 1;
+    position: fixed;
+    background-image: url("http://www.animalmade.com/files/css/../images/svg/menu-fs-bg.svg");
+    background-size: auto 100%;
+    background-repeat: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 140%;
+    visibility: hidden;
+    transition: visibility 0.8s;
+}
+section div{text-align: center;padding-top: 0.8em}
 h2{color: #fff;font-size: 3em;text-transform: uppercase;font-family: billy;margin-bottom: 0;margin-top: 1em;}
-h3{color: #fff;font-family: BoldItalic;}
-#home img{width: 40%;}
+h3{color: #fff;font-family: Bitter-BoldItalic;}
+h4{color: #fff;font-size: 2.2em;text-transform: uppercase;}
+#home img{width: 35%;}
+#scroll-down img{width: 5%;}
 #sobre p{font-size: 1.4em;color: #fff}
 .avatar{float: left;margin-left: 11em;max-width: 17%;}
 input[type="text"] {
@@ -129,125 +174,22 @@ input[type="button"]{
    color:#fff;  
    font: 14px verdana, arial, sans-serif;
 }
-footer{position: fixed;width: 100%;bottom: 0;}
-img#mascote{max-width: 10%;}
-
-.drop {
-  position: relative;
-    width: 20px;
-    height: 20px;
-    top: -210px;
-    margin: 0 auto;
-    background: #ff5153;
-    -moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    border-radius: 20px;
-    -moz-animation-name: drip;
-    -webkit-animation-name: drip;
-    animation-name: drip;
-    -moz-animation-timing-function: cubic-bezier(1,0,.91,.19);
-    -webkit-animation-timing-function: cubic-bezier(1,0,.91,.19);
-    animation-timing-function: cubic-bezier(1,0,.91,.19);
-    -moz-animation-duration: 2s;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    right: -80px;
+footer{position: fixed;width: 100%;bottom: 0;text-align: center;color: #fff;font-family: billy;}
+footer p{font-family: 'Bitter-Italic';margin:0;}
+#copyright{
+  padding: 1em;
+  text-align: center;
+  line-height: 2;
+  font-size: 10px;color: #34373f
 }
-
-.drop:before {
+#copyright:before{
   content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 30px solid rgb(255, 81, 83);
-    top: -22px;
-    left: 0px;
+  background: url('../imgs/border-footer.png')no-repeat center;
+  height: 10px;
+  width: 100%;
+  display: inline-block;
 }
+img#mascote{max-width: 30%;}
 
-.wave {
-  position: relative;
-  opacity: 0;
-  top: 0;
-  width: 2px;
-  height: 1px;
-  border: #FFF 7px solid;
-  -moz-border-radius: 300px / 150px;
-  -webkit-border-radius: 300px / 150px;
-  border-radius: 300px / 150px;
-  -moz-animation-name: ripple;
-  -webkit-animation-name: ripple;
-  animation-name: ripple;
-  -moz-animation-delay: 2s;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-  -moz-animation-duration: 2s;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
 
-.wave:after {
-  content: "";
-  position: absolute;
-  opacity: 0;
-  top: -5px;
-  left: -5px;
-  width: 2px;
-  height: 1px;
-  border: #FFF 5px solid;
-  -moz-border-radius: 300px / 150px;
-  -webkit-border-radius: 300px / 150px;
-  border-radius: 300px / 150px;
-  -moz-animation-name: ripple-2;
-  -webkit-animation-name: ripple-2;
-  animation-name: ripple-2;
-  -moz-animation-duration: 2s;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-
-@keyframes ripple {
-    from {
-      opacity: 1;
-    }
-    to {
-      width: 600px;
-      height: 300px;
-      border-width: 1px;
-      top: -100px;
-      opacity: 0;
-    }
-}
-
-@keyframes ripple-2 {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-  100% {
-    width: 200px;
-    height: 100px;
-    border-width: 1px;
-    top: 100px;
-    left: 200px;
-  }
-}
-
-@keyframes drip {
-    to {
-      top: 190px;
-    }
-}
 
