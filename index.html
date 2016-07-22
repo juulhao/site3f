@@ -22,9 +22,12 @@
       <section id="home">
          <div class="container">
                <div class="col-md-12">
-                  <img class="img-responsive=" src="imgs/3f-logo-home.png">
+                  <img src="imgs/3f-logo-home.png">
                   <div class="col-md-12">
-                     <h3>"Full,Fast,Forward..."</h3>
+                     <h3><span class="font-red">"</span>Full,Fast,Forward..."</h3>
+                  </div>
+                  <div class="col-md-12">
+                     <div class="drop"></div>
                   </div>
                </div>
          </div>
@@ -34,7 +37,7 @@
          <div class="container">
             <div class="col-md-12">
                <div class="col-md-12">
-                     <h2 class="titulo-sublinhado">Sobre <span class="font-red">a Agência</span></h2>
+                     <h2 class="titulo-sublinhado">Sobre <span class="font-red">a 3F</span></h2>
                </div>
                <div class="col-md-12">
                   <p>
@@ -70,23 +73,37 @@
                   <h2>Fale <span class="font-red">Conosco</span></h2>
             </div>
             <div class="col-md-12">
-               <div class="form-group">
+               <div class="wrapper">
                   <form>
-                     <div class="col-md-4">
-                        <input type="text" name="nome" placeholder="Nome">
+                     <div class="row">
+                        <input class="border-input" type="text" name="nome" placeholder="Nome">
                      </div>
-                     <div class="col-md-4">
-                        <input type="text" name="nome" placeholder="Email">
+                    <div class="row">
+                       <input class="border-input" type="text" name="email" placeholder="Email">
+                    </div>
+                     <div class="row">
+                        <select class="border-input-red">
+                           <option>Qual tipo de serviço procura?</option>
+                           <option>Mídias Sociais</option>
+                           <option>Ecommerce</option>
+                           <option>Planejamento Estratégico Digital</option>
+                           <option>Desenvolvimento</option>
+                        </select> 
                      </div>
-                     <div class="col-md-4">
-                        <input type="text" name="nome" placeholder="Empresa">
-                     </div>
-                     
+                     <div class="row">
+                        <input type="button" name="enviarform" value="Enviar">
+                     </div>             
                   </form>
                </div>
+               
             </div>
          </div>
       </section>
+      <footer>
+         <div class="wrapper">
+            <img id="mascote" class="img-responsive" src="imgs/mascote.png" align="center">
+         </div>
+      </footer>
 
    <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
    </body>
